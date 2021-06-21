@@ -1,5 +1,5 @@
 <?php
-    $link =new mysqli('localhost','root','','data') or die ("Kết nối thất bại!!");
+    $link =new mysqli('localhost','vietduckmt98','duccode1709','home') or die ("Kết nối thất bại!!");
 ?>
 <!DOCTYPE html>
 <html lang="vi">
@@ -26,8 +26,8 @@
         </div>
         <div id ="menu">
             <ul>
-                <li><a href="/lazy/index.php">Trang chủ</a></li>
-                <li><a href="/lazy/chart.php">Biểu đồ</a></li>
+                <li><a href="/Web-server-Raspberrypi/index.php">Trang chủ</a></li>
+                <li><a href="/Web-server-Raspberrypi/chart.php">Biểu đồ</a></li>
             </ul>
         </div>
         <div id="maincontent">
@@ -44,7 +44,7 @@
                             </tr>
                         
                             <?php
-                                $query = "SELECT * FROM test";
+                                $query = "SELECT * FROM device";
                                 $result = mysqli_query($link, $query);
                                 if(mysqli_num_rows($result)>0){
                                 $i =0;

@@ -1,10 +1,10 @@
 <?php
 //index.php
-$connect = mysqli_connect("localhost", "root", "", "testing");
+$connect = mysqli_connect("localhost", "vietduckmt98", "duccode1709", "home");
 $query = '
 SELECT temp,hum, 
 UNIX_TIMESTAMP(CONCAT_WS(" ", dates, times)) AS datetime 
-FROM temp3 
+FROM sensordata 
 ORDER BY dates DESC, times DESC
 ';
 $result = mysqli_query($connect, $query);
@@ -148,8 +148,8 @@ $jsonTable1 = json_encode($table1);
         </div>
         <div id ="menu">
             <ul>
-                <li><a href="/lazy/index.php">Trang chủ</a></li>
-                <li><a href="/lazy/showdata.php">Danh sách thiết bị</a></li>
+                <li><a href="/Web-server-Raspberrypi/index.php">Trang chủ</a></li>
+                <li><a href="/Web-server-Raspberrypi/showdata.php">Danh sách thiết bị</a></li>
             </ul>
         </div>
   <div class="page-wrapper">

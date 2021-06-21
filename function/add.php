@@ -1,5 +1,5 @@
 <?php
-$link =new mysqli('localhost','root','','data') or die ("Kết nối thất bại!!");
+$link =new mysqli('localhost','vietduckmt98','duccode1709','home') or die ("Kết nối thất bại!!");
 ?>
 <!DOCTYPE html>
 <html lang="vi">
@@ -68,7 +68,7 @@ $link =new mysqli('localhost','root','','data') or die ("Kết nối thất bạ
         $amplitude = $_POST['amplitude'];
         $icon = $_POST['icon'];
         //$query = "INSERT INTO lop VALUE ('$maLop','$tenLop')";
-        $query = "INSERT INTO `test` ( `type`, `name`, `state`, `flavor`, `amplitude`, `icon`) 
+        $query = "INSERT INTO `device` ( `type`, `name`, `state`, `flavor`, `amplitude`, `icon`) 
         VALUES ('$type', ' $name', '$state', '$flavor', '$amplitude', ' $icon')";
         mysqli_query($link,$query) or die ('Thêm thiết bị thất bại!!');
         //header('location:index.php');

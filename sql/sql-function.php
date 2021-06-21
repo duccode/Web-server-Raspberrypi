@@ -1,11 +1,11 @@
 <?php 
 
 define("serverName", "localhost");
-define("userName", "root");
+define("userName", "vietduckmt98");
 //define("password", "nightsky");
-define("password", "");
-define("dbName", "data");
-define("TABLE", "test"); // need space between 'device'
+define("password", "duccode1709");
+define("dbName", "home");
+define("TABLE", "device"); // need space between 'device'
 
 function ConnectToSql() {
 	$conn = mysqli_connect(serverName, userName, password);

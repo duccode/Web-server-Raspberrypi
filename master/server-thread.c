@@ -14,10 +14,10 @@
 #define localhost "127.0.0.1"
 #define SET "OK"
 
-char *IdDevice[4][3] = { {"Living Room Light", "L1", NULL},
+char *IdDevice[4][3] = { {"Living Room", "L1", NULL},
                     {"Toilet Light", "L2", NULL},
-                    {"Bed Room Light", "L3", NULL},
-                    {"Font Door", "D1", NULL},
+                    {"Bed Light", "L3", NULL},
+                    {"Light Door", "D1", NULL},
 };
 
 void ServerCommand(char *str);

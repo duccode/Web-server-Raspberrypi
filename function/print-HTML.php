@@ -3,7 +3,7 @@
 #include 'delete.php';
 function PrintObjectDatabase($conn) {
 
-	$sql = "SELECT *  FROM test";
+	$sql = "SELECT *  FROM device";
 	$result = $conn->query($sql);
 
 	if ($result->num_rows > 0) {
@@ -24,7 +24,7 @@ function PrintObject($objType, $objName, $state, $objFalvor, $amplitude, $icon) 
 		$stateName = "turn-on";
 	}
 	echo '<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">';
-		echo '<div class="object '.$objType . " " .$objFalvor.'">';// " " .$stateName.
+		echo '<div class="object '.$objType . " " .$objFalvor." " .$stateName.'">';// " " .$stateName.
 			echo '<div class="obj-info">',
 	                '<p class="obj-header">'.$objName.'</p>';
 
@@ -45,7 +45,7 @@ function PrintObject($objType, $objName, $state, $objFalvor, $amplitude, $icon) 
 	        if( $objType == "obj-slider")
 	    		echo '<div class="slider-range-min"></div>';
 	        else if( $objType == "obj-button")
-	        	echo '<div class="switch-button "></div>';//'.$stateButton.'
+	        	echo '<div class="switch-button  '.$stateButton.'"></div>';//'.$stateButton.'
 	        else if( $objType == "obj-turn obj-slider" ) {
 	        	echo '<div class="switch-button type-turn"></div>
 	        			<div class="obj-off"><i class="fa fa-close"></i></div>
