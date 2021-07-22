@@ -1,0 +1,36 @@
+#line-chart {
+	width: 100%;
+	min-height: 305px;
+	max-height: 380px;
+	border: 1px solid #dfe4ed;
+	border-radius: 0px;
+	background: #FFFFFF;
+	margin: 40px 0 10px 0;
+	box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.06), 0 1px 0px 0 rgba(0, 0, 0, 0.02);
+}
+
+table{
+	width: 100%;
+	color: #333;
+	border-spacing: 0;
+	border-collapse: collapse;
+	margin: 40px 0 40px 0;
+	height: 370px;
+	border: 1px solid #dfe4ed;
+	box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.06), 0 1px 0px 0 rgba(0, 0, 0, 0.02);
+	
+}
+
+table th{
+	color: #fff;
+	text-align: center;
+	background-color: #5cb85c;
+	border: 1px solid #5cb85c;
+}
+
+td{
+	padding: 10px;
+	background-color: #FFF;
+	border: 1px solid #CCC;
+	text-align: center;
+}
