@@ -17,6 +17,8 @@ hướng dẫn sử dụng:
 
 1 - Tạo cơ sở dữ liệu : tạo csdl "home" table "device","sensordata"
 
+Note: "usename phpmyadmin change "your_user"" "password phpmyadmin change "your_password""
+ 
 2 - Truy cập đường dẫn : cd /var/www/html/RaspberryPi/master
 
 	Chạy lệnh : gcc -std=c11 -Wall -g -D_BSD_SOURCE server-thread.c -o server-thread -lpthread
@@ -24,4 +26,6 @@ hướng dẫn sử dụng:
 	tiếp theo chạy : ./server-thread
 	
 3 - Nạp chương trình cho esp: tải và cài đặt Arduino IDE.
+
+4 - truy cập webserver : https://ip_raspi/RasberryPi
 
